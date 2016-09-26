@@ -1,0 +1,83 @@
+<%- include header %>
+<br />
+<div class="container-fluid" id="LG">
+	<div class="row-fluid">
+		<div class="span12">
+			<div class="row-fluid">
+				<div class="span8">
+
+
+
+					<div class="hero-unit" style="text-indent:2em">
+					<% posts.forEach(function (post, index) { %>
+  <div style="text-align:center"><p><h2><a><%= post.title %></a> </h2></p>
+  
+  <p class="info">
+    作者：<a><%= post.name %></a> |
+    日期：<%= post.time.minute %>
+  </p>
+</div>
+				
+				<p><%- post.post %></p>	
+
+					
+
+
+					<% }) %>
+
+
+				
+					</div>
+				</div>
+
+				<div class="span4">
+					
+					<p>
+				<iframe name="weather_inc" src="http://i.tianqi.com/index.php?c=code&id=2&num=2" width="330" height="70" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+					
+	</p>
+<hr />
+
+					<h3>
+						每日一语
+					</h3>
+
+<script type="text/javascript" src="gd/gd.js"></script>
+<script type="text/javascript" src="gd/gdgd.js"></script>
+	<script type="text/javascript" src="dist/js/jquery-2.0.0.min.js"></script>
+<link href="xiaopingguo/css/index.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="xiaopingguo/js/a.js"></script>			
+
+<div class="apple">
+	<ul>
+		<li><a  >少说话，多写代码，倍儿棒  </a></li>  
+        <li><a  >成功将属于那些从不说“不可能”的人</a></li> 
+      <li><a  >无所求便无所得</a></li> 
+      <li><a  >求知若饥，虚心若愚</a></li> 
+    </ul> 
+</div>
+<hr/>
+
+
+<div id="uyan_frame"></div>
+<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2109488"></script>
+
+
+
+   
+
+
+
+
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<%- include paging %>
+
+
+        
+<%- include footer %>
